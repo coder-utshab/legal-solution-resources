@@ -208,15 +208,42 @@
 
 
 <!-- daily ui carcoul -->
- <div class="carousel w-full">
-  <div id="slide1" class="carousel-item relative w-full">
-    <img src="./images/banner.png" class="w-full" />
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide4" class="btn btn-circle">❮</a> 
-      <a href="#slide2" class="btn btn-circle">❯</a>
+<section class="my-16 text-center relative">
+  <!-- Background Image -->
+  <div class="w-full h-[500px] bg-cover bg-center flex items-center justify-center text-white"
+       style="background-image: url('./images/banner.png');">
+       
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-3xl mx-auto p-10">
+      <!-- Profile Image -->
+      <div class="flex justify-center">
+        <img src="https://via.placeholder.com/100"
+             class="w-24 h-24 rounded-full border-4 border-white shadow-lg mb-4" 
+             alt="Client Photo">
+      </div>
+
+      <!-- Name & Role -->
+      <h3 class="text-2xl font-bold">Awlad Hossain</h3>
+      <p class="text-sm mb-4">UIX Designer</p>
+
+      <!-- Review -->
+      <p class="max-w-2xl mx-auto">
+        Contrary to popular belief, Lorem Ipsum is not simply random text. 
+        It has roots in classical Latin literature from 45 BC, making it 
+        over 2000 years old.
+      </p>
+
+      <!-- Arrows -->
+      <button class="btn btn-circle absolute left-5 top-1/2 -translate-y-1/2">❮</button>
+      <button class="btn btn-circle absolute right-5 top-1/2 -translate-y-1/2">❯</button>
     </div>
-  </div> 
- </div>
+  </div>
+</section>
+
+
 
 
 
